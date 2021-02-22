@@ -1,7 +1,7 @@
 from block import Block
   
 class Blockchain:
-  def __init__(self):
+    def __init__(self):
     self.chain = []
     self.unconfirmed_transactions = []
     self.genesis_block()
