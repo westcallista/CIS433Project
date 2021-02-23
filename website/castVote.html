@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="frontPage.css">
+		<link rel="icon" href="logo.svg">
+		<title>Oregon's Voting System</title>
+	</head>
+	<body>
+		<header>
+			<h1><a class="home" href="/">Oregon's Unofficial Blockchain-Based Voting System</a></h1>
+			<div class="slideshow">
+				<img class="mySlides" src="americanFlag.jpg">
+				<img class="mySlides" src="oregon.jpg">
+				<img class="mySlides" src="vote.jpg">
+			</div>
+		</header>
+		<div>
+			<h3>Cast your vote!</h3>
+			<h3>Who would you like to be your next President?</h3>
+			<form action='/end'>
+			  <input onclick="return myFunctionD()" class="button dem vote" type="submit" value="Democrat">
+			  <input onclick="return myFunctionR()" class="button rep vote" type="submit" value="Republican">
+			  <input onclick="return myFunctionI()" class="button ind vote" type="submit" value="Independent">
+			</form>
+		</div>
+		<br></br>
+	</body>
+	<script>
+		var slideIndex = 0;
+		carousel();
+
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";
+		  }
+		  slideIndex++;
+		  if (slideIndex > x.length) {slideIndex = 1}
+		  x[slideIndex-1].style.display = "block";
+		  setTimeout(carousel, 2000);
+		}
+
+		function myFunctionD() {
+			var choice = confirm("Are you sure you want to vote for the Democratic candidate?");
+			if (choice == true)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+
+		function myFunctionR() {
+			var choice = confirm("Are you sure you want to vote for the Republican candidate?");
+			if (choice == true)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+
+		function myFunctionI() {
+			var choice = confirm("Are you sure you want to vote for the Independent candidate?");
+			if (choice == true)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+	</script>
+</html>

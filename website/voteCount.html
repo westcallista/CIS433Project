@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="frontPage.css">
+		<link rel="icon" href="logo.svg">
+		<title>Oregon's Voting System</title>
+	</head>
+	<body>
+		<header>
+			<h1><a class="home" href="/">Oregon's Unofficial Blockchain-Based Voting System</a></h1>
+			<div class="slideshow">
+				<img class="mySlides" src="americanFlag.jpg">
+				<img class="mySlides" src="oregon.jpg">
+				<img class="mySlides" src="vote.jpg">
+			</div>
+		</header>
+		<div>
+			<h2 id="cVote">Current Vote Count</h2>
+			<br></br>
+			<div>
+				<h4 class="dem">Democratic</h4>
+				<h4 class="dem num">1,250,000</h4>
+			</div>
+			<br></br>
+			<br></br>
+			<div>
+				<h4 class="rep">Republican</h4>
+				<h4 class="rep num">1,250,000</h4>
+			</div>
+			<br></br>
+			<br></br>
+			<div>
+				<h4 class="ind">Independent</h4>
+				<h4 class="ind num">250,000</h4>
+			</div>
+			<br></br>
+		</div>
+	</body>
+	<script>
+		var slideIndex = 0;
+		carousel();
+
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";
+		  }
+		  slideIndex++;
+		  if (slideIndex > x.length) {slideIndex = 1}
+		  x[slideIndex-1].style.display = "block";
+		  setTimeout(carousel, 2000);
+		}
+	</script>
+</html>

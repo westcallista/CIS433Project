@@ -1,0 +1,154 @@
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+}
+
+h2#cVote {
+	text-decoration: underline;
+}
+
+h3 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 28px;
+	margin: auto;
+}
+
+h4.dem {
+	color: blue;
+}
+
+h4.rep {
+	color: red;
+}
+
+h4.num {
+	font-size: 100px;
+}
+
+h4.ind {
+	color: #7E7E7E;
+}
+
+ul {
+	list-style-type: none;
+}
+
+input {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+label {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+div {
+	text-align: center;
+}
+
+img {
+	height: 65%;
+	width: 100%;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.5em 3em;
+	border: 0.16em solid red;
+	margin: 0 0.3em 0.3em 0;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	background-color: red;
+	text-align: center;
+	transition: all 0.15s;
+}
+
+a.home {
+	color: black;
+	background-color: white;
+	border-color: white;
+	padding: 0.25em 1.5em;
+	margin: 0 0.15em 0.15em 0;
+	text-transform: none;
+	font-weight: 800;
+}
+
+a.button:hover {
+	color: blue;
+	border-color: blue;
+	background-color: white;
+}
+
+a.button:active {
+	color: blue;
+	border-color: blue;
+	background-color: white;
+}
+
+input.button {
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.5em 3em;
+	border: 0.16em solid red;
+	margin: 0 0.3em 0.3em 0;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	background-color: red;
+	text-align: center;
+	transition: all 0.15s;
+	font-size: 17px;
+}
+
+input.button:hover {
+	color: blue;
+	border-color: blue;
+	background-color: white;
+}
+
+input.button:active {
+	color: blue;
+	border-color: blue;
+	background-color: white;
+}
+
+input.button.dem {
+	background-color: blue;
+	border-color: blue;
+}
+
+input.button.ind {
+	background-color: #7E7E7E;
+	border-color: #7E7E7E;
+}
+
+input.button.vote:hover {
+	color: black;
+	border-color: black;
+	background-color: white;
+}
+
+input.button.vote:active {
+	color: black;
+	border-color: black;
+	background-color: white;
+}

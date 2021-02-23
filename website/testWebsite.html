@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="frontPage.css">
+		<link rel="icon" href="logo.svg">
+		<title>Oregon's Voting System</title>
+	</head>
+	<body>
+		<header>
+			<h1><a class="home" href="/">Oregon's Unofficial Blockchain-Based Voting System</a></h1>
+			<div class="slideshow">
+				<img class="mySlides" src="americanFlag.jpg">
+				<img class="mySlides" src="oregon.jpg">
+				<img class="mySlides" src="vote.jpg">
+			</div>
+		</header>
+		<div>
+			<h3>If you are not yet registered to vote,</h3>
+			<h3>please register at you local courthouse</h3>
+			<h3>before attempting to vote.</h3>
+		</div>
+		<div>
+			<div>
+				<a href="/signIn" class="button">Sign In</a>
+			</div>
+		</div>
+		<br></br>
+		<div>
+			<a href="/voteCount" class="button">Current Vote Count</a>
+		</div>
+	</body>
+	<script>
+		var slideIndex = 0;
+		carousel();
+
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";
+		  }
+		  slideIndex++;
+		  if (slideIndex > x.length) {slideIndex = 1}
+		  x[slideIndex-1].style.display = "block";
+		  setTimeout(carousel, 2000);
+		}
+	</script>
+</html>
